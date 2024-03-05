@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 style="margin-top: 10vh;">✨Welcome to the Band Name Generator✨</h1>
+        <img src="pics/pexels-darcy-delia-1079013.jpg" alt="" style="border-radius: 20px;" height="400px">
+        <audio id="audio" src="./sounds/nature.mp3"></audio>
+        <div>
+          <h1 id="randomName">Random Name</h1>
+          <button id="clickButton" class="btn btn-outline-danger mt-3 mb-4 btn-lg" onclick="playme()">Click</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="wave">
+    <p class="text-center">Find more resources within</p>
+  </footer>
+
+
+
+  <script>
+
+    function playme() {
+      var audio = new Audio("./sounds/impact.mp3");
+      audio.play();
+    };
+
+    window.onload = function () {                                        //audio when page loads
+      var audio = new Audio("./sounds/angelical-pad-143276.mp3");
+      audio.play();
+    };
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
